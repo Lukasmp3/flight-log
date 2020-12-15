@@ -85,7 +85,7 @@ public class PersonServiceTest {
         Person person = testSubject.getExistingOrCreatePerson(existingClubMember);
 
         // verify results
-        assertFalse("Should return prepared instance", clubMemberFromDd == person);
+        assertTrue("Should return prepared instance", clubMemberFromDd != person);
 
     }
 

@@ -22,7 +22,7 @@ public class FlightControllerTest {
 
     @Test
     public void generateJson() throws JsonProcessingException {
-        AirpleTo towplane = AirplaneTo.builder().id(5L).immatriculation("OK125").type("Type engine").build();
+        AirplaneTo towplane = AirplaneTo.builder().id(5L).immatriculation("OK125").type("Type engine").build();
         AirplaneWithCrewTo towplaneWithCrew = AirplaneWithCrewTo.builder().airplane(towplane).note("Note towplane").pilot(PersonTo.builder().firstName("Adalbert").lastName("Kolínsk7").memberId(123L).build()).build();
         AirplaneTo glider = AirplaneTo.builder().id(6L).immatriculation("OKHDG").type("Type glider").build();
         AirplaneWithCrewTo gliderWithCrew = AirplaneWithCrewTo.builder().airplane(glider).note("Note glider").pilot(PersonTo.builder().firstName("Eliška").lastName("Kutnohorská").memberId(125L).build()).build();
